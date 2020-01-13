@@ -14,4 +14,4 @@ listing_three_b <- marmotR::search("[metrics.bytecode.jsr]=0 && [metrics.bytecod
 listing_four <- marmotR::search("[metrics.api.crypto.SecureRandom] > 0 || [metrics.api.crypto.Signature] > 0 || [metrics.api.crypto.Mac] > 0 || [metrics.api.crypto.Certificates] > 0 || [metrics.api.crypto.KeyHandling] > 0 || [metrics.api.crypto.MessageDigest] > 0 || [metrics.api.crypto.KeyStore] > 0 || [metrics.api.crypto.Cipher.getInstance] > 0")
 
 # Listing 5: All data for log4j:log4j
-listing_five <- marmotR::search("[maven.groupId] = \"org.apache.activemq\" #[*]")
+listing_five <- marmotR::search("[maven.groupId] = \"log4j\" && [maven.artifactId] = \"log4j\" #[*]")
