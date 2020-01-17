@@ -15,3 +15,6 @@ listing_four <- marmotR::search("[metrics.api.crypto.SecureRandom] > 0 || [metri
 
 # Listing 5: All data for log4j:log4j
 listing_five <- marmotR::search("[maven.groupId]=\"org.apache.felix\" && [maven.artifactId]=\"org.apache.felix.framework\" #[*]", limit = 300)
+
+# Listing 6: Projects with unsafe heap operations
+listing_six <- marmotR::search("[metrics.api.unsafe.heap] > 0")
